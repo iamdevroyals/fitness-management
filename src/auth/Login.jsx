@@ -1,7 +1,7 @@
 // src/auth/Login.jsx
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import './login.css';
+import "./login.css";
 import loginImage from '../components/images/pic3.jpg'; // Make sure this image exists
 
 const Login = () => {
@@ -25,6 +25,7 @@ const Login = () => {
     setError('');
 
     try {
+      
       const response = await fetch('http://localhost:5000/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
