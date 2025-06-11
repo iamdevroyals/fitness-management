@@ -1,0 +1,25 @@
+.layout-container {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content.sidebar-expanded {
+  margin-left: 250px; /* matches .sidebar.expanded width */
+}
+
+.main-content.sidebar-collapsed {
+  margin-left: 64px; /* matches .sidebar.collapsed width */
+}
+
+.content-area {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}

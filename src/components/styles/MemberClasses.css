@@ -1,0 +1,85 @@
+.member-classes {
+  padding: 30px;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+  margin-left: 220px; /* Adjust if sidebar is fixed and wide */
+  margin-top: 64px;   /* Adjust if header is fixed */
+}
+
+@media screen and (max-width: 768px) {
+  .member-classes {
+    margin-left: 0;
+    margin-top: 64px;
+    padding: 20px;
+  }
+}
+
+.classes-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-left: 5px solid #6c5ce7;
+  padding-left: 15px;
+}
+
+.classes-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.class-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease-in-out;
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+}
+
+.class-emoji {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.class-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0984e3;
+}
+
+.class-card p {
+  font-size: 14px;
+  color: #444;
+  margin: 4px 0;
+}
+
+.status {
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status.active {
+  background-color: #dff9fb;
+  color: #00b894;
+}
+
+.status.upcoming {
+  background-color: #ffeaa7;
+  color: #e17055;
+}
