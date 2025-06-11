@@ -1,7 +1,7 @@
 // src/auth/Signup.jsx
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import './login.css'; // Ensure you have the styling applied
+import "./Login.css";
 
 const Signup = () => {
   const navigate = useNavigate();
