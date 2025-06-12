@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import "./Login.css";
-import loginImage from '../components/images/pic3.jpg'; // Make sure this image exists
+import loginImage from '../components/images/protein-gym.jpg'; // Make sure this image exists
 
 const Login = () => {
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ const Login = () => {
 
     try {
 
-      const response = await fetch('http://localhost:5000/api/auth/login', {
+      const response = await fetch('https://fitness-backend-0uzm.onrender.com/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),

@@ -52,3 +52,65 @@
   font-weight: bold;
   color: #2d3436;
 }
+
+/* ✅ Medium devices (Tablets) */
+@media (max-width: 768px) {
+  .dashboard {
+    margin-left: 0; /* Collapse sidebar on smaller screens */
+    padding: 20px;
+    padding-top: 80px;
+  }
+
+  .dashboard h2 {
+    font-size: 24px;
+  }
+
+  .dashboard p {
+    font-size: 15px;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .card h3 {
+    font-size: 17px;
+  }
+
+  .card p {
+    font-size: 22px;
+  }
+}
+
+/* ✅ Small devices (Mobile phones) */
+@media (max-width: 480px) {
+  .dashboard {
+    padding: 15px;
+    padding-top: 70px;
+  }
+
+  .dashboard h2 {
+    font-size: 20px;
+  }
+
+  .dashboard p {
+    font-size: 14px;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: 1fr; /* One card per row */
+    gap: 15px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 20px;
+  }
+}

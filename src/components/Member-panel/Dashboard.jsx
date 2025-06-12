@@ -4,8 +4,8 @@ import '../styles/Dashboard1.css';
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <h2>Welcome Back, Member! 💪</h2>
-      <p>Select an option from the sidebar to manage your classes and workouts.</p>
+      <h2 className="dashboard-heading">Welcome Back, Member</h2>
+      <p className="dashboard-subtext">Choose an option from the sidebar to manage your classes and workouts.</p>
 
       <div className="dashboard-cards">
         <div className="card">
